@@ -1,0 +1,19 @@
+##
+# Copyright: Lenderkit OÜ is the owner or the licensee of all intellectual property rights in this file.
+#    These are protected by copyright laws and treaties around the world.
+#    You must not make copies via any medium or download any extracts from any part of this file unless expressly authorised to do so.
+# License: https://lenderkit.com/license
+# Website: https://lenderkit.com/
+#
+# Package: LenderKit\Modules\SiteRequests
+##
+swagger: '2.0'
+tags:
+  - name: 'Site Requests'
+    description: |
+      Site requests administration tool. This module can be used for simple form requests like "contact us", etc. It
+      can show you and allows to manage all the "get in touch" user requests that's been performed from your site.
+
+paths:
+  /public/site-request:
+    $ref: "routes/site_requests.yaml#/paths/site_requests"

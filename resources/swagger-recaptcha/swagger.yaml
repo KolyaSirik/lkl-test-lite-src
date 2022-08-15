@@ -1,0 +1,14 @@
+##
+# Copyright: Lenderkit OÜ is the owner or the licensee of all intellectual property rights in this file.
+#    These are protected by copyright laws and treaties around the world.
+#    You must not make copies via any medium or download any extracts from any part of this file unless expressly authorised to do so.
+# License: https://lenderkit.com/license
+# Website: https://lenderkit.com/
+#
+# Package: LenderKit\Modules\SiteRequests
+##
+swagger: '2.0'
+
+paths:
+  /public/site-request:
+    $ref: "{google_recaptcha}/routes/with_recaptcha_token.yaml#/paths/post_with_recaptcha_token"

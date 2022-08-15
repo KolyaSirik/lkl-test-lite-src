@@ -1,0 +1,63 @@
+##
+# Copyright: Lenderkit OÜ is the owner or the licensee of all intellectual property rights in this file.
+#    These are protected by copyright laws and treaties around the world.
+#    You must not make copies via any medium or download any extracts from any part of this file unless expressly authorised to do so.
+# License: https://lenderkit.com/license
+# Website: https://lenderkit.com/
+#
+# Package: LenderKit\Modules\SiteRequests
+##
+swagger: '2.0'
+paths:
+  site_requests:
+    post:
+      summary: Creates a new request to the Platform Admin vai the Contact Form.
+      description: Create a new Contact Form submission to the Admin. The list of submissions is available in the Admin panel.
+      tags:
+        - 'Site Requests'
+      parameters:
+        - name: name
+          description: The name of the sender.
+          in: formData
+          type: string
+
+        - name: subject
+          description: The subject of the message.
+          in: formData
+          type: string
+          required: true
+
+        - name: email
+          description: The email of the sender.
+          in: formData
+          type: string
+          required: true
+
+        - name: message
+          description: The text of the message.
+          in: formData
+          type: string
+          required: true
+
+        - name: dont_send
+          description: The option not to send the email to the Admin if set to **"true"**. In that case the message will still appear in the Admin panel.
+          in: formData
+          type: boolean
+      responses:
+        200:
+          description: OK
+          schema:
+            type: object
+            required:
+              - success
+            properties:
+              success:
+                type: boolean
+                default: true
+              data:
+                type: object
+            example:
+              success: true
+              data:
+                message: Your request has been sent successfully.
+
