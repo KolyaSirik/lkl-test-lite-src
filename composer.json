@@ -1,6 +1,6 @@
 {
-    "name": "lenderkit/module-siterequest",
-    "description": "Site Requests Management Module for LenderKit framework",
+    "name": "lenderkit/module-license",
+    "description": "License for LenderKit framework",
     "homepage": "https://lenderkit.com/",
     "license": "https://lenderkit.com/license",
     "authors": [
@@ -9,26 +9,16 @@
             "email": "hello@justcoded.com"
         }
     ],
-    "require": {
-        "lenderkit/core": ">=19.0.0",
-        "lenderkit/module-setup": ">=3.0.0"
-    },
     "autoload": {
         "psr-4": {
-            "LenderKit\\Modules\\SiteRequests\\": "core/",
-            "LenderKit\\Modules\\SiteRequests\\Admin\\": "admin/",
-            "LenderKit\\Modules\\SiteRequests\\Api\\": "api/",
-            "LenderKit\\Modules\\SiteRequests\\Tests\\": "tests/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "LenderKit\\Modules\\SiteRequests\\Providers\\SiteRequestsModuleProvider"
             ]
         },
         "lenderkit": {
-            "module": "LenderKit\\Modules\\SiteRequests\\SiteRequestsModule"
         }
     },
     "minimum-stability": "dev"
