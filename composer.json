@@ -1,0 +1,25 @@
+{
+    "name": "lenderkit/module-license",
+    "description": "License for LenderKit framework",
+    "homepage": "https://lenderkit.com/",
+    "license": "https://lenderkit.com/license",
+    "authors": [
+        {
+            "name": "JustCoded Team",
+            "email": "hello@justcoded.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+            ]
+        },
+        "lenderkit": {
+        }
+    },
+    "minimum-stability": "dev"
+}
